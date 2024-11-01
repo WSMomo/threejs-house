@@ -360,6 +360,8 @@ const tick = () => {
     timer.update()
     const elapsedTime = timer.getElapsed()
 
+    doorLight.intensity = Math.random()
+
     // ghost
     ghosts.forEach((ghost)=>{
         const ghostAngle = elapsedTime * ghost.elapsedTime;
